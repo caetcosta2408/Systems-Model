@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="openModal()">
+  <div class="head"></div>
+  <div class="system">Diamond - Sistema Gestão Estoque</div>
+  <div class="container">
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <h2>Cadastro Usuários</h2><hr><br>
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" size="40px"><br>
+
+          <label for="m-email">E-Mail</label>
+          <input id="m-email" type="email" size="40px"><br>
+
+          <label for="m-senha">Senha</label>
+          <input id="m-senha" type="password" size="20px"><br>
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="divTable">
+      <h2>Cadastro Usuários</h2>
+      <button class="btnInsert" onclick="openModal()">Incluir</button>
+      <a class="btnReturn" href="index.html">Retornar</a><br>
+      <table>
+        <thead>
+          <h3>Consultar/Editar/Deletar</h3><hr><br>
+          <tr>
+            <th>Nome</th>
+            <th>E-Mail</th>
+            <th>Senha</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <script src="scriptUsers.js"></script>
+</body>
+
+</html>

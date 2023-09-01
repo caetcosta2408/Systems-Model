@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Fornecedores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="openModal()">
+  <div class="head"></div>
+  <div class="system">Diamond - Sistema Gestão Estoque</div>
+  <div class="container">
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <h2>Cadastro Fornecedores</h2><hr><br>
+          <label for="m-cnpj">CNPJ</label>
+          <input id="m-cnpj" type="text" size="25px"><br>
+
+          <label for="m-razao_social">Razão Social</label>
+          <input id="m-razao_social" type="text" size="50px"><br>
+
+          <label for="m-nome_fantasia">Nome Fantasia</label>
+          <input id="m-nome_fantasia" type="text" size="40px"><br>
+
+          <label for="m-email">E-Mail</label>
+          <input id="m-email" type="email" size="40px"><br>
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="divTable">
+      <h2>Cadastro Fornecedores</h2>
+      <button class="btnInsert" onclick="openModal()">Incluir</button>
+      <a class="btnReturn" href="index.html">Retornar</a><br>
+      <table>
+        <thead>
+          <h3>Consultar/Editar/Deletar</h3><hr><br>
+          <tr>
+            <th>CNPJ</th>
+            <th>Razão Social</th>
+            <th>Nome Fantasia</th>
+            <th>E-Mail</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <script src="scriptForneced.js"></script>
+</body>
+
+</html>

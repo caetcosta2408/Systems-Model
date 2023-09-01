@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Funcionários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="openModal()">
+  <div class="head"></div>
+  <div class="system">Diamond - Sistema Gestão Estoque</div>
+  <div class="container">
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <h2>Cadastro Funcionários</h2><hr><br>
+          <label for="m-cpf">CPF</label>
+          <input id="m-cpf" type="text" size="20px"><br>
+
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" size="40px"><br>
+
+          <label for="m-setor">Setor</label>
+          <input id="m-setor" type="text" size="40px"><br>
+
+          <label for="m-funcao">Função</label>
+          <input id="m-funcao" type="text" size="50px"><br>
+
+          <label for="m-salario">Salário</label>
+          <input id="m-salario" type="number" size="15px"><br>
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="divTable">
+      <h2>Cadastro Funcionários</h2>
+      <button class="btnInsert" onclick="openModal()">Incluir</button>
+      <a class="btnReturn" href="index.html">Retornar</a><br>
+      <table>
+        <thead>
+          <h3>Consultar/Editar/Deletar</h3><hr><br>
+          <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Setor</th>
+            <th>Função</th>
+            <th>Salário</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <script src="scriptFuncs.js"></script>
+</body>
+
+</html>

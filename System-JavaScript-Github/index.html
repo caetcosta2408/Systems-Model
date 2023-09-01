@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Gestão Estoque</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: arial, helvetica, sans-serif;
+            font-size: 17px;
+        }
+        .diamondLogo{
+            margin-top: 13px;
+            margin-left: 10px;
+            width: 198px;
+            height: 198px;
+            position: absolute;
+            background-image: url(DiamondLogo.png);
+        }
+        .head{
+            width: 100%;
+            height: 112px;
+            position: absolute;
+            border: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .system{
+        	width: 870px;
+        	padding: 10px;
+        	margin-top: 30%;
+        	margin-left: 7%;
+        	position: relative;
+        	font-size: 3em;
+        	font-weight: 700;
+        	border: 1px solid darkcyan;
+        	border-radius: 4px;
+        }
+        .menu{
+            margin-top: 20px;
+            margin-left: 500px;
+            background-color: darkcyan;
+            padding: 20px 20px;
+            list-style: none;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            position: absolute;
+        }
+        .menu li{
+            position: relative;
+            float: left;
+            border: 1px solid #c0c0c0;
+            list-style: none;
+        }
+        .menu li a{
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        .menu li a:hover{
+            background: #333;
+            color: #fff;
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .menu li  ul{
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: #fff;
+            display: none;
+        }
+        .menu li:hover ul, .menu li.over ul{
+            display: block;
+            margin-top: 5px;
+        }
+        .menu li ul li{
+            border: 1px solid #c0c0c0;
+            display: block;
+            width: 150px;
+            padding: 5px 10px;
+        }
+        .menu li ul li:hover{
+            background-color: #333;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .container{
+            margin-top: 0px;
+            margin-left: 35px;
+            position: relative;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .ring::before{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 0px solid blue;
+            border-top: 10px solid #24ecff;
+            border-radius: 50%;
+            margin-top: -200px;
+            transform-origin: bottom top;
+            animation: animate 6s linear infinite;
+        }
+        .container .ring::after{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 0px solid blue;
+            border-top: 10px solid #24ecff;
+            border-radius: 50%;
+            margin-top: -200px;
+            transform-origin: bottom top;
+            animation: animate 6s linear infinite;
+            animation-delay: -3s;
+        }
+        @keyframes animate{
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+        .container .ring::before{
+            content: "";
+            position: absolute;
+            top: 210px;
+            left: -25px;
+            width: 198px;
+            height: 198px;
+            border-top: 0px;
+            border-bottom:0px;
+            border-radius: 50%;
+            background: #24ecff22;
+            background-image: url(DiamondLogo.png);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!--<div class="diamondLogo"></div>-->
+        <div class="circle">
+            <div class="container">
+              <div class="ring"></div>
+            </div>
+        </div>
+        <div class="head"></div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Cadastros</a>
+              <ul>
+                <li><a href="UsersDataBase.html">Usuários</a></li>
+                <li><a href="FuncsDataBase.html">Funcionários</a></li>
+                <li><a href="ClientsDataBase.html">Clientes</a></li>
+                <li><a href="FornecedDataBase.html">Fornecedores</a></li>
+                <li><a href="ProducDataBase.html">Produtos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Movimentação</a>
+              <ul>
+                <li><a href="Error.html">Estoque</a></li>
+                <li><a href="Error.html">Vendas</a></li>
+              </ul>
+            </li>
+            <li><a href="Error.html">Relatórios</a></li>
+            <li><a href="#">Contact</a>
+                <ul>
+                    <li>+55 84 98777-4083 Whatsapp</li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="system">Diamond - Sistema Gestão Estoque</div>
+    </main>
+</body>
+</html>
