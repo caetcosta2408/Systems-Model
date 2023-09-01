@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8 - Interest Calculation</title>
+  <link rel="stylesheet" href="css/styleCalculation.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h2>Exercise 8: Interest Calculation</h2>
+      <p>Create a function that calculates the final value of an investment based on initial capital, interest rate, and investment time (in months). The program must prompt the user for these values and display the final value.</p>
+      <form class="form">
+        <h3>Interest Calculation</h3>
+        <div class="resume">
+          <div>
+            Capital: R$
+            <span class="capital">0.00</span>
+          </div>
+          <div>
+            Interest Rate: R$
+            <span class="interest_rate">0.00</span>
+          </div>
+          <div>
+            Total: R$
+            <span class="total">0.00</span>
+          </div>
+        </div>
+        <div class="newItem">
+          <div class="divMonthYear">
+            <label for="month_year">Month/Year</label>
+            <input type="text" id="month_year" autofocus>
+          </div>
+          <div class="divAmount">
+            <label for="amount">Amount/Interest</label>
+            <input type="number" id="amount">
+          </div>
+          <div class="divType">
+            <label for="type">Type</label>
+            <select id="type">
+              <option>Enter</option>
+              <option>Interest Rate</option>
+            </select>
+          </div>
+          <button id="btnNew" class="btn">Insert</button>
+        </div>
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Month/Year</th>
+                <th class="columnAmount">Amount/Interest</th>
+                <th class="columnType">Type</th>
+                <th class="columnAction"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </form>
+      <a class="btn" href="index.html">Return</a>
+    </div>
+  </main>
+  <script src="js/scriptCalculation.js"></script>
+</body>
+</html>

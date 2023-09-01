@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5 - Table</title>
+  <link rel="stylesheet" href="css/styleTable.css">
+</head>
+<body>
+  <div class="container">
+	<h2>Exercise 5: Table</h2>
+	<p>Create a program that receives a number from the user and displays the table of that number, from 1 to 10.</p>
+    <form class="form">
+		<h3>Table</h3>
+      	Number: <input type="number" id="number" size="10" placeholder="Type a number..." required autofocus><br>
+      	<button type="button" class="btn" onclick="displayTable()">Display Table</button>
+		<br><p id="idText"></p>
+		<br><p id="idProcess" class="process"></p>
+    </form>
+    <div class="display">
+		<h3>Numbers Table</h3><hr>
+		<p id="list"></p>
+		<div class="divTable">
+			<table width="178" border="1px">
+			  <thead>
+				<tr>
+				  <th width="50" heigth="100">Id</th>
+				  <th width="150" heigth="100">Number</th>
+				</tr>
+			  </thead>
+			  <tbody></tbody>
+			</table>
+		</div>
+	</div>
+	<a class="btn" href="index.html">Return</a>
+  </div>
+  <script src="js/scriptTable.js"></script>
+</body>
+</html>

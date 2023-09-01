@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4 - Palindrome</title>
+  <link rel="stylesheet" href="css/stylePalindrome.css">
+</head>
+<body>
+  <div class="container">
+	<h2>Exercise 4: Palindrome</h2>
+	<p>Create a function that checks whether a word is a palindrome (that is, whether it reads the
+		same backwards and forwards). The program must ask the user for a word and inform
+		whether or not it is a palindrome.</p>
+    <form class="form">
+		<h3>Palindrome</h3>
+
+		Word: <input type="text" id="idString" size="40" placeholder="Type a word..." required autofocus><br>
+      	<button type="button" class="btn" onclick="checkPalindrome()">Check Palindrome</button>
+		<br><p id="idText"></p>
+		<br><p id="idProcess" class="process"></p>
+
+    </form>
+	<a class="btn" href="index.html">Return</a>
+  </div>
+  <script src="js/scriptPalindrome.js"></script>
+</body>
+</html>

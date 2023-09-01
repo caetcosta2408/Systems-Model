@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2 - Prime Numbers</title>
+  <link rel="stylesheet" href="css/stylePrime.css">
+</head>
+<body>
+  <div class="container">
+	<h2><h2>Exercise 2: Prime Numbers</h2>
+		<p>Write a function that checks whether a number is prime or not. Then create a program that prints the first 10 prime numbers.</p>
+    <form class="form">
+		  <h3>Prime Number</h3>
+      	Number: <input type="number" id="number" size="10" placeholder="Type a number..." required autofocus><br>
+      <button type="button" class="btn" onclick="checkPrime()">Check Number</button>
+		  <br><p id="idText"></p>
+		  <br><p id="idProcess" class="process"></p>
+    </form>
+    <div class="print">
+		  <h3>First 10 Prime Numbers</h3><hr>
+		  <p id="list"></p>
+	  </div>
+	  <a class="btn" href="index.html">Return</a>
+  </div>
+  <script src="js/scriptPrime.js"></script>
+</body>
+</html>
